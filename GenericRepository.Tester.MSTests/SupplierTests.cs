@@ -70,6 +70,7 @@ namespace GenericRepository.Tester.MSTests
 
             Assert.AreEqual("QUICK", order.CustomerId);
             Assert.IsNotNull(order.Customer);
+            Assert.IsNotNull(order.OrderDetails);
         }
     }
 }

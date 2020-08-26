@@ -64,6 +64,7 @@ namespace GenericRepository.Tester.DataAccess
         {
             return context.Orders.Where(o => o.OrderId == id)
                 .Include("Customer")
+                .Include("OrderDetails")
                 .FirstOrDefault();
         }
     }
